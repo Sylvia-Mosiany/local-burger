@@ -1,0 +1,166 @@
+/** ALL Screens and mobile devices **/
+*{
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img{
+	max-width: 100%;
+}
+
+body, header{
+	margin:0px;
+}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color:#5c5e5c;
+}
+.nav_main{
+	background-color:#aa2192;
+	padding:20px;
+	border-radius: 0px 0px 20px 20px; 
+}
+.nav_list{
+	list-style: none;
+	margin:0px;
+	padding:0px;
+}
+.nav_item{
+	display: inline-block;
+}
+.nav_item a{
+	color:#e2ef17;
+	text-decoration: none;
+	padding:20px;
+}
+.nav_item a:hover{
+	background-color:#5c5e5c; 
+	transition:2s;
+}
+.nav_item .current{
+	background-color:#5c5e5c;  
+}
+
+.logo{
+	display:block;
+	margin:auto;
+	width:40%;
+}
+ header{
+ 	background-color:#aa2192;
+ }
+ h1{
+ 	font-family: Garamond Regular, Times New Roman, serif;
+ 	font-size:30px;
+ 	color:#f00966;
+ }
+ h2{
+ 	font-family:Berlin Sans FB, Helvetica, sans-serif;
+ 	font-size: 24px;
+ 	color:#aa2192;
+ }
+
+ /**Menu CSS**/
+
+    table {
+    width: 90%;
+    margin:100px auto;
+    table-layout:fixed;
+    border-collapse: collapse;
+    }
+
+    td {
+    padding:1em 0 0 0;
+    vertical-align:bottom;
+    }
+    
+    td span{
+    background-color:#fff;
+    }
+    
+    td:first-child {
+    text-align: left;
+    font-weight: 700;
+  overflow: hidden;
+    position: relative;
+    }
+    
+td:first-child::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width:1500px;
+  height:0px ;
+  margin-left: 1em;
+  border-bottom:2px dotted grey;
+}
+
+    td:last-child {
+    text-align:right;
+    width:3em;
+    }
+/**End of menu CSS**/
+/**CSS for making map responsive**/
+.googlemap{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.googlemap iframe{
+    left:0;
+    top:0;
+    height:80%;
+    width:100%;
+    position:absolute;
+}
+/**End of CSS for making map responsive**/
+
+.submit{
+	padding:20px;
+	font-size:15px;
+	color:#5c5e5c;
+	background-color:#11ee11; 
+}
+
+/**For Medium Screens -- use tablet layout**/
+@media screen and (min-width:500px) {
+
+
+}
+
+/** Large Screens -- use desktop layout **/
+@media screen and (min-width:1000px) {
+.main_img{
+	float:left;
+	margin-right:10%;
+}
+.main_para{
+	float:left;
+}
+.column{
+	width:40%;
+}
+.contactform{
+	float:left;
+	width:40%;
+}
+.sideimage{
+	float:left;
+	width:40%;
+}
+.container{
+	width:980px;
+	margin:0 auto;
+}
+.nav_list{
+	width:980px;
+	margin:0 auto;
+}
+}
